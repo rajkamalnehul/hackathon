@@ -38,7 +38,7 @@ export default {
         height: '100%',
       },
       modelLayout: {
-        padding: '40px 62px 0px 62px',
+        // padding: '40px 62px 0px 62px',
         textAlign: 'center',
       },
       dialogFooter: {
@@ -53,4 +53,8 @@ export default {
         textAlign: 'center',
         // overflow : "hidden"
       },
+      errMsg:{
+        fontSize:12,
+        color:'red',textAlign:'center'
+      }
 }
