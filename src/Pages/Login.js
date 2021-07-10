@@ -2,15 +2,25 @@ import React,{useState,useEffect} from "react";
 import Button from '@material-ui/core/Button';
 import ModalComp from '../Components/ModalComp';
 import InputComp from '../Components/InputComp';
+import ApiServices from '../helpers/ApiServices';
 const Login =()=>{
     const [open, setOpen] = React.useState(false);
     const [inputtext, setInput] = React.useState('');
     const openModel =()=>{
+        const obj={email:'bvanesh135@gmail.com',password:'123456'};
+          console.log("login obj",obj);
+        ApiServices.login(obj)
+        .then((response)=>{
+            console.log("login response",response);
+        })
       setOpen(true);
     }
     const inputChange = (data) => {
         setInput(data);
       };
+      useEffect(()=>{
+          
+      },[])
     return(
         <div>
         <Button onClick={openModel}>Model open</Button>
