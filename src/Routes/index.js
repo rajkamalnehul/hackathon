@@ -10,11 +10,28 @@ import {
   withRouter,
   Redirect
 } from "react-router-dom";
+import Login from '../Pages/Login';
 
 const Routes = ()=>{
     return(
         <div>
-            Routes
+            <HashRouter>
+          
+                <Switch>
+                  <Route
+                    path={"/login"}
+                    exact
+                    render={props => (
+                      <Login
+                        {...props}
+                      />
+                    )}
+                  />
+                  
+                 
+                </Switch>
+           
+        </HashRouter>
         </div>
     )
 }
