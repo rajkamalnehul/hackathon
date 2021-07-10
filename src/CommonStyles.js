@@ -56,5 +56,85 @@ export default {
       errMsg:{
         fontSize:12,
         color:'red',textAlign:'center'
+      },
+      stepsLayoutMain:{
+        // flex:1,
+        // flexDirection:'row',justifyContent:'space-between'
+        
+        justifyContent:'space-between',
+       display:'flex',
+        borderColor:'#ccc',
+        borderRadius:10,
+        borderWidth:1,
+        width:'60%'
+        
+      },
+      stepsLayoutSecond:{
+        width:'40%',
+        textAlign:'right',
+        paddingRight:40
+        // justifyContent:'flex-end',
+      },
+      stepsText:{
+        width:'100%',
+        display:'flex',
+        padding:20,
+      },
+      commonBtn:{
+        padding:12,
+        borderRadius:8,
+        borderColor:ColorCode.transparent,
+        paddingLeft:40,paddingRight:40,
+        fontFamily:'Prompt-SemiBold',
+        color:ColorCode.white,
+        fontSize:14,
+        // width:'100%'
+      },
+      deliveryBox:{
+        display:'flex',
+        justifyContent:'space-evenly',
+        alignItems:'center',
+        padding:20,
+        // paddingTop:20,
+        // paddingBottom:20,
+        width:'100%'
+      },
+      totalItemsMain:{
+       
+        paddingTop:20,
+        paddingBottom:20,
+        paddingLeft:12,
+        paddingRight:12,
+      
+
+      },
+      totalItems:{
+        display:'flex',
+        justifyContent:'space-between',
+      },
+      itemCount:{
+        fontFamily:'Prompt-SemiBold',
+        fontSize:16
+      },
+      borderLine:{
+        borderBottom:'0.5px solid #EB0028',
+        marginTop:15,
+        marginBottom:15
+      },
+      productImg:{
+        borderRadius:10,
+        width:300,
+        height:300
+      },
+      productTag:{
+        display:'flex',
+        justifyContent:'space-between'
+      },
+      productname:{
+        fontFamily:'Prompt-Medium',
+        fontSize:16
+      },
+      ProductData:{
+        
       }
 }

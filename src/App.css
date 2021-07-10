@@ -31,6 +31,14 @@
   max-width: 800px !important;
   width:500px;
 }
+@font-face {
+  font-family: Prompt-Medium;
+  src: url('./assests/Fonts/Prompt-Medium.ttf');
+}
+@font-face {
+  font-family: Prompt-SemiBold;
+  src: url('./assests/Fonts/Prompt-SemiBold.ttf');
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

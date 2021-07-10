@@ -1,11 +1,13 @@
 /** @format */
 
 import React from 'react';
+import CommonStyles from '../../CommonStyles';
 
-import './custom-button.css';
-
-const CustomButton = (props) => (
-  <button className='custom-button' {...props}>{props.children}</button>
-);
+const CustomButton = (props) => {
+  console.log("props",props);
+  return(
+  <button style={Object.assign({},CommonStyles.commonBtn,{backgroundColor:props.backgroundColor})} {...props}>{props.children}</button>
+  )
+  };
 
 export default CustomButton;
