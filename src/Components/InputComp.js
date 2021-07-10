@@ -1,6 +1,14 @@
+/** @format */
+
 import React, { Component } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Link, Typography, InputAdornment,TextField } from '@material-ui/core';
+import {
+  Link,
+  Typography,
+  InputAdornment,
+  TextField,
+  Input,
+} from '@material-ui/core';
 import CommonStyles from '../CommonStyles';
 import ColorCode from '../helpers/ColorCode';
 
@@ -39,39 +47,39 @@ const InputComp = (props) => {
   };
   return (
     <div>
-        <Typography
-          style={Object.assign({}, CommonStyles.h5, CommonStyles.fontBold, {
-            marginBottom: 10,
-            textAlign: 'left',
-          })}
-        >
-          {props.labelValue}
-        </Typography>
-        <TextField
-          {...props}
-          placeholder={props.placeholder}
-          style={{ ...props.style, ...props.customColor }}
-          InputProps={{
-            endAdornment: (
-              <img src={props.inputicon} style={{ ...props.iconStyle }} />
-            ),
-            underline: {
-              '&&&:before': {
-                borderBottom: 'none',
-              },
-              '&&:after': {
-                borderBottom: 'none',
-              },
+      <Typography
+        style={Object.assign({}, CommonStyles.h5, CommonStyles.fontBold, {
+          marginBottom: 10,
+          textAlign: 'left',
+        })}
+      >
+        {props.labelValue}
+      </Typography>
+      <Input
+        {...props}
+        multiline={false}
+        placeholder={props.placeholder}
+        style={{ ...props.style, ...props.customColor }}
+        InputProps={{
+          endAdornment: (
+            <img src={props.inputicon} style={{ ...props.iconStyle }} />
+          ),
+          underline: {
+            '&&&:before': {
+              borderBottom: 'none',
             },
-            classes: {
-              input:
-                props.showLine == true
-                  ? classes.inputInlineStyle
-                  : classes.borderLine,
+            '&&:after': {
+              borderBottom: 'none',
             },
-          }}
-        />
-
+          },
+          classes: {
+            input:
+              props.showLine == true
+                ? classes.inputInlineStyle
+                : classes.borderLine,
+          },
+        }}
+      />
     </div>
   );
 };
